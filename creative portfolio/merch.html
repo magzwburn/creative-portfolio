@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Merch Portfolio</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --cream:#fffcf3;
+    --cyan:#d1fbfe;
+    --maroon:#a4322c;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background:var(--cyan);
+    min-height:100vh;
+    font-family:'Playfair Display', serif;
+    text-align:center;
+}
+
+
+/* Cream center page */
+.page {
+    background:var(--cream);
+    width:68%;
+    min-height:100vh;
+    margin:auto;
+    padding:60px 0;
+}
+
+
+/* Heading section */
+.container {
+    width:80%;
+    max-width:900px;
+    margin:0 auto 40px;
+}
+
+
+.heading-image {
+    width:100%;
+    max-width:700px;
+    height:auto;
+    display:block;
+    margin:20px auto 30px;
+}
+
+
+.subtext {
+    color:var(--maroon);
+    font-family:'Playfair Display', serif;
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    line-height:1.5;
+    font-weight:500;
+}
+
+
+/* Merch images */
+.merch-container {
+    width:80%;
+    max-width:900px;
+    margin:0 auto;
+}
+
+
+.merch-image {
+    width:100%;
+    max-width:700px;
+    height:auto;
+    display:block;
+    margin:40px auto;
+}
+/* ---------- Home Button ---------- */
+
+.home-link{
+
+position:absolute;
+
+top:2%;
+
+left:2%;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+text-decoration:none;
+
+z-index:100;
+
+transition:transform .18s ease;
+
+}
+
+.home-link:hover{
+
+transform:scale(1.08);
+
+}
+
+.home-link img{
+
+width:clamp(32px,4vw,55px);
+
+height:auto;
+
+display:block;
+
+}
+
+.home-label{
+
+margin-top:4px;
+
+padding:2px 8px;
+
+background:var(--cream);
+
+border:2px solid var(--maroon);
+
+border-radius:6px;
+
+color:var(--maroon);
+
+font-family:'Kalam', cursive;
+
+font-size:clamp(.6rem,.9vw,.8rem);
+
+line-height:1;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+    <a class="home-link" href="index.html" title="Home">
+
+        <img src="assets/home.png" alt="Home">
+    
+    </a>
+
+    <!-- Top heading -->
+    <div class="container">
+
+        <p class="subtext">
+            merch made by
+        </p>
+
+        <img 
+        class="heading-image" 
+        src="assets/nametag.png" 
+        alt="Heading">
+
+        <p>While most people think of paint and charcoal when they hear art, my brain immediately goes to doodling. There’s nothing like the power of a good doodle! I used to design and sew my own clothes. As I got older, I found I could bulk create merchandise and made my first t-shirt for Camp Harrison, a sleepaway camp I attended and worked at. When transitioning to college, I made a sweatshirt for my sorority, which caught lots of eyes. I also made merchandise for Volume Three of INSCAPE, all of the profit was sent to various women’s charities. The North Carolina State Women’s Field Hockey Team reached out and asked me to make merchandise for their 2025/206 season! They were pleased enough with my work that I got asked back to make merchandise for their upcoming 2026/2027 season, and I am beyond excited to work with them again.
+</p>
+
+    </div>
+
+
+
+    <!-- Merch items -->
+    <div class="merch-container">
+
+
+        <img 
+        class="merch-image" 
+        src="assets/FH.png" 
+        alt="Merch item 1">
+        
+
+
+        <p>Field Hockey Merchandise 2025/2026 season. 
+ 
+        </p>
+
+
+        <img 
+        class="merch-image" 
+        src="assets/vol3merch.png" 
+        alt="Merch item 2">
+        <p>INSCAPE Volume Three merchandise, all profit donated to women's charities. 
+        </p>
+
+
+        <img 
+        class="merch-image" 
+        src="assets/gcs.png" 
+        alt="Merch item 3">
+        <p>Girl's Camp Sweatshirt 2024. 
+        </p>
+
+        <img 
+        class="merch-image" 
+        src="assets/gcshirt.png" 
+        alt="Merch item 3">
+        <p>Girl's Camp Shirt 2024. 
+        </p>
+
+
+        <img 
+        class="merch-image" 
+        src="assets/bcshirt.png" 
+        alt="Merch item 4">
+        <p>Boy's Camp shirt 2024. 
+        </p>
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
