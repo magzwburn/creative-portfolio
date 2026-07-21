@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maggie Washburn</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --cream:#fffcf3;
+    --cyan:#d1fbfe;
+    --maroon:#a4322c;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+  }
+
+  body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--cyan);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* ============ THE FIXED-PROPORTION CANVAS ============
+     Everything below is positioned as a percentage of this
+     box, so the whole composition scales together and keeps
+     the same layout as the original wireframe at any size. */
+     
+     
+.canvas{
+
+  position:relative;
+  width:100%;
+  min-height:100vh;
+  background:var(--cyan);
+  overflow:hidden;
+}
+
+  .stripe-band{
+
+  position:absolute;
+
+  top:0;
+
+  bottom:0;
+
+  background-image:repeating-linear-gradient(
+
+      90deg,
+
+      var(--cyan) 0px,
+
+      var(--cyan) 26px,
+
+      var(--maroon) 26px,
+
+      var(--maroon) 52px
+
+     );
+
+  }
+
+  .stripe-left{
+
+    left:0;
+    width:16%;
+
+  }
+
+.stripe-right{
+
+    right:0;
+    width:16%;
+
+}
+
+.card{
+
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:16%;
+    right:16%;
+    background:var(--cream);
+    overflow:hidden;
+    max-width:1100px;
+    margin:auto;
+}
+
+  /* ---------- Title ---------- */
+.title{
+
+    position:absolute;
+    top:4%;
+    right:4%;
+    width:48%;
+    margin:0;
+    text-align:right;
+    font-family:'Playfair Display', serif;
+    color:var(--maroon);
+    font-size:clamp(1.6rem,2.7vw,3.1rem);
+    line-height:1.15;
+}
+
+
+/* ---------- Avatar ---------- */
+.avatar{
+  position:absolute;
+  left:35%;          /* adjust this number to move left/right */
+  top:50%;
+  transform:translate(-50%,-50%);
+  width:21%;
+  height:auto;
+  display:block;
+  transition:transform .18s ease;
+
+}
+
+.avatar:hover{
+  transform:translate(-50%,-50%) scale(1.05);
+}
+
+.icon{
+    position:absolute;
+    display:block;
+    cursor:pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+  
+.icon img, .icon svg{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:fill;
+}
+
+.icon{
+    transition: transform .18s ease, filter .18s ease;
+}
+
+.icon:hover, .icon:focus-visible{
+    transform: scale(1.08) rotate(-2deg);
+    filter: drop-shadow(0 4px 6px rgba(164,50,44,.25));
+}
+
+.icon:focus-visible{
+    outline: 2px dashed var(--maroon);
+    outline-offset: 4px;
+    border-radius: 6px;
+}
+
+
+.icon-inscape{
+
+  left:52%;
+  top:28%;
+  width:clamp(30px,7vw,90px);
+
+}
+
+.icon-video{
+
+  left:67%;
+  top:28%;
+  width:clamp(25px,9vw,95px);
+
+}
+
+.icon-merch{
+  left:82%;
+  top:28%;
+  width:clamp(80px,9.5vw,120px);
+
+}
+
+.icon-linkedin{
+
+  left:55%;
+  top:50%;
+  width:clamp(100px,12vw,150px);
+
+}
+
+.icon-call{
+
+  left:80%;
+  top:46%;
+  width:clamp(20px,3.8vw,50px);
+
+}
+
+.icon-resume{
+
+  left:57%;
+  top:68%;
+  width:clamp(70px,8vw,130px);
+
+}
+
+.icon-email{
+
+  left:78%;
+  top:68%;
+  width:clamp(60px,9.5vw,120px);
+
+}
+
+/* ---------- Textbox ---------- */
+
+.textbox{
+
+  position:absolute;
+  left:-14%;
+  top:14%;
+  width:55%;
+  height:auto;
+  pointer-events:none;
+
+}
+
+/* ---------- Click image ---------- */
+
+.click{
+
+  position:absolute;
+  left:2%;
+  top:30%;
+  width:20%;
+  height:auto;
+  pointer-events:none;
+
+}
+
+</style>
+</head>
+<body>
+
+<main class="canvas">
+
+  <div class="stripe-band stripe-left" aria-hidden="true"></div>
+  <div class="stripe-band stripe-right" aria-hidden="true"></div>
+
+  <section class="card">
+
+    <h1 class="title">the creative portfolio of<br>maggie washburn</h1>
+
+    <a href="aboutmlw.html">
+      <img class="textbox" src="assets/textbox.png" alt="" aria-hidden="true">
+
+      <img class="click" src="assets/click.png" alt="" aria-hidden="true">
+      <img
+  
+          class="avatar"
+  
+          src="assets/avatar.png"
+  
+          alt="Hand-drawn line portrait of Maggie Washburn wearing a dress and boots">
+  
+  </a>
+
+    <nav class="icon-grid" aria-label="Portfolio sections">
+
+      <a class="icon icon-inscape" href="inscape.html" title="Inscape Magazine">
+        <img src="assets/inscape.png" alt="Inscape Magazine">
+      </a>
+
+      <a class="icon icon-video" href="video.html" title="Videos">
+        <img src="assets/video.png" alt="Videos">
+      </a>
+
+      <a class="icon icon-merch" href="merch.html" title="Merch">
+        <img src="assets/merch.png" alt="Merch">
+      </a>
+
+      <a class="icon icon-linkedin" href="https://www.linkedin.com/in/maggie-washburn-611a83202/" title="LinkedIn">
+        <img src="assets/linkedin.png" alt="LinkedIn">
+      </a>
+
+      <a class="icon icon-call" href="tel:6149803938" title="Call me">
+        <img src="assets/call.png" alt="Call me">
+      </a>
+
+      <a class="icon icon-resume" href="MAGGIEWASHBURNRESUME.pdf" title="Resume">
+        <img src="assets/resume.png" alt="Resume">
+      </a>
+
+      <a class="icon icon-email" href="mailto:maggiewashburn2@gmail.com" title="Email me">
+        <img src="assets/email.png" alt="Email me">
+      </a>
+
+    </nav>
+
+  </section>
+
+</main>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio Page</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --cream:#fffcf3;
+    --cyan:#d1fbfe;
+    --maroon:#a4322c;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background:var(--cyan);
+    min-height:100vh;
+    font-family:'Playfair Display', serif;
+    text-align:center;
+}
+
+
+/* Same scale as merch + video pages */
+.page {
+    background:var(--cream);
+    width:68%;
+    min-height:100vh;
+    margin:auto;
+    padding:60px 0;
+}
+
+
+/* Top heading section */
+.container {
+    width:80%;
+    max-width:900px;
+    margin:0 auto 40px;
+}
+
+
+/* Nametag */
+.heading-image {
+    width:100%;
+    max-width:700px;
+    height:auto;
+    display:block;
+    margin:20px auto 30px;
+}
+
+
+/* Text */
+.subtext {
+    color:var(--maroon);
+    font-family:'Playfair Display', serif;
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    line-height:1.5;
+    font-weight:500;
+    max-width:700px;
+    margin:0 auto;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <div class="container">
+
+
+        <img 
+        class="heading-image" 
+        src="assets/nametag.png" 
+        alt="Heading">
+
+
+        <p class="subtext">
+            Your text goes here. Add your portfolio description,
+            introduction, or any information you want displayed
+            on this page.
+        </p>
+
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>

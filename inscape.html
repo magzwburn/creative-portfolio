@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio Page</title>
+<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --cream:#fffcf3;
+    --cyan:#d1fbfe;
+    --maroon:#a4322c;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background:var(--cyan);
+    min-height:100vh;
+    font-family:'Playfair Display', serif;
+    text-align:center;
+}
+
+
+/* Same scale as merch + video pages */
+.page {
+    background:var(--cream);
+    width:68%;
+    min-height:100vh;
+    margin:auto;
+    padding:60px 0;
+}
+
+
+/* Top heading section */
+.container {
+    width:80%;
+    max-width:900px;
+    margin:0 auto 40px;
+}
+
+
+/* Nametag */
+.heading-image {
+    width:100%;
+    max-width:700px;
+    height:auto;
+    display:block;
+    margin:20px auto 30px;
+}
+
+
+/* Text */
+.subtext {
+    color:var(--maroon);
+    font-family:'Playfair Display', serif;
+    font-size:clamp(1rem, 2vw, 1.5rem);
+    line-height:1.5;
+    font-weight:500;
+    max-width:700px;
+    margin:0 auto;
+}
+
+.button {
+
+display:inline-block;
+
+margin-top:40px;
+
+padding:15px 30px;
+
+background:var(--maroon);
+
+color:var(--cream);
+
+font-family:'Playfair Display', serif;
+
+font-size:1rem;
+
+text-decoration:none;
+
+border-radius:5px;
+
+transition:transform .2s ease, opacity .2s ease;
+
+}
+
+.button:hover {
+
+transform:scale(1.05);
+
+opacity:0.85;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <div class="container">
+
+        <p class="subtext">
+            magazine made by
+        </p>
+
+        <img 
+        class="heading-image" 
+        src="assets/nametag.png" 
+        alt="Heading">
+
+
+    </div>
+
+    <p> As a freshman in college, I felt a gap between the work I was doing and the amount of art 
+        I was creating. I was under the impression that as a Computing in the Arts major there would 
+        be a heavy emphasis on art, but I found there to be more of an emphasis on technology. I took
+         matters into my own hands and started INSCAPE Magazine, which launched my Sophomore year. 
+         INSCAPE started as a personal project and a way for me to share art made by myself and other
+          Charleston artists through a digital magazine. This project is so special to me as I became
+           my own creative director and got to work with friends to make a product for an audience to 
+           enjoy. I quickly realized the potential of INSCAPE and invested my time and energy into 
+           creating more Volumes, each with a different theme. Some volumes raised money for charities, 
+           and I even got sponsored to print Volume Five! You can find the INSCAPE website by clicking 
+           the button below - I coded that site too!
+
+    </p>
+
+    <a class="button" 
+    href="YOUR_LINK_HERE" 
+    target="_blank">
+    Visit the INSCAPE Website
+    </a>
+
+</div>
+
+
+</body>
+</html>
