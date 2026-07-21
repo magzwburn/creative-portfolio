@@ -104,12 +104,44 @@ opacity:0.85;
 }
 
 
+/* ---------- Home Button ---------- */
+
+.home-link{
+    position:absolute;
+    top:2%;
+    left:2%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-decoration:none;
+    z-index:100;
+    transition:transform .18s ease;
+}
+
+.home-link:hover{
+    transform:scale(1.08);
+}
+
+.home-link img{
+    width:clamp(32px,4vw,55px);
+    height:auto;
+    display:block;
+}
+
+
 </style>
 
 </head>
 
 
 <body>
+
+    <div class="page">
+        <a class="home-link" href="index.html" title="Home">
+    
+            <img src="assets/home.png" alt="Home">
+        
+        </a>
 
 
 <div class="page">
@@ -144,7 +176,7 @@ opacity:0.85;
     </p>
 
     <a class="button" 
-    href="YOUR_LINK_HERE" 
+    href="https://magzwburn.github.io/inscape/home.html" 
     target="_blank">
     Visit the INSCAPE Website
     </a>
