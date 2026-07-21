@@ -245,131 +245,189 @@
 
 }
 
-/* ================= MOBILE PHONE LAYOUT ================= */
 @media (max-width: 600px){
 
 body{
+
   display:block;
+
   background:var(--cyan);
+
 }
 
 .canvas{
+
   min-height:100vh;
+
   height:auto;
+
   overflow:visible;
+
   padding:20px 0;
+
 }
 
-/* Hide side stripes on small screens */
 .stripe-left,
+
 .stripe-right{
+
   display:none;
+
 }
 
 .card{
+
   position:relative;
+
   left:auto;
+
   right:auto;
-  top:auto;
+
   width:90%;
+
   min-height:auto;
+
   margin:auto;
+
   padding:30px 0 60px;
+
   overflow:visible;
-  background:var(--cream);
+
 }
 
-/* Title at top */
 .title{
+
   position:relative;
+
   top:auto;
+
   right:auto;
+
   width:90%;
-  margin:0 auto 30px;
+
+  margin:0 auto 20px;
+
   text-align:center;
-  font-size:2rem;
+
+  font-size:1.8rem;
+
 }
 
+/* Avatar first */
 
-/* Avatar + speech bubble first */
 .avatar{
+
   position:relative;
+
   left:auto;
+
   top:auto;
+
   transform:none;
-  width:55%;
-  margin:20px auto;
+
+  width:45%;
+
+  margin:20px auto 5px;
+
+  display:block;
+
 }
 
 .avatar:hover{
+
   transform:scale(1.05);
+
 }
 
+/* Remove speech bubble */
 
 .textbox{
-  position:absolute;
-  left:10%;
-  top:180px;
-  width:80%;
+
+  display:none;
+
 }
+
+/* Click icon underneath avatar */
 
 .click{
+  
   display:none;
+
 }
 
+/* Icons stacked and centered */
 
-/* Change icons from absolute positions into a vertical list */
 .icon-grid{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:35px;
-  margin-top:50px;
-}
 
+  display:flex;
+
+  flex-direction:column;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:25px;
+
+  margin-top:20px;
+
+}
 
 .icon{
+
   position:relative;
+
   left:auto;
+
   top:auto;
-  width:auto;
+
+  transform:none;
+
 }
 
-
-.icon img{
-  width:auto;
-  height:auto;
-}
-
+/* Icons 2x smaller */
 
 .icon-inscape{
-  width:45%;
+
+  width:22%;
+
 }
 
 .icon-video{
-  width:50%;
+
+  width:25%;
+
 }
 
 .icon-merch{
-  width:55%;
+
+  width:27%;
+
 }
 
 .icon-linkedin{
-  width:55%;
+
+  width:27%;
+
 }
 
 .icon-call{
-  width:25%;
+
+  width:12%;
+
 }
 
 .icon-resume{
-  width:50%;
+
+  width:25%;
+
 }
 
 .icon-email{
-  width:50%;
-}
 
+  width:25%;
+
+}
 
 }
 
