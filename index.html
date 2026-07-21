@@ -245,6 +245,134 @@
 
 }
 
+/* ================= MOBILE PHONE LAYOUT ================= */
+@media (max-width: 600px){
+
+body{
+  display:block;
+  background:var(--cyan);
+}
+
+.canvas{
+  min-height:100vh;
+  height:auto;
+  overflow:visible;
+  padding:20px 0;
+}
+
+/* Hide side stripes on small screens */
+.stripe-left,
+.stripe-right{
+  display:none;
+}
+
+.card{
+  position:relative;
+  left:auto;
+  right:auto;
+  top:auto;
+  width:90%;
+  min-height:auto;
+  margin:auto;
+  padding:30px 0 60px;
+  overflow:visible;
+  background:var(--cream);
+}
+
+/* Title at top */
+.title{
+  position:relative;
+  top:auto;
+  right:auto;
+  width:90%;
+  margin:0 auto 30px;
+  text-align:center;
+  font-size:2rem;
+}
+
+
+/* Avatar + speech bubble first */
+.avatar{
+  position:relative;
+  left:auto;
+  top:auto;
+  transform:none;
+  width:55%;
+  margin:20px auto;
+}
+
+.avatar:hover{
+  transform:scale(1.05);
+}
+
+
+.textbox{
+  position:absolute;
+  left:10%;
+  top:180px;
+  width:80%;
+}
+
+.click{
+  display:none;
+}
+
+
+/* Change icons from absolute positions into a vertical list */
+.icon-grid{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:35px;
+  margin-top:50px;
+}
+
+
+.icon{
+  position:relative;
+  left:auto;
+  top:auto;
+  width:auto;
+}
+
+
+.icon img{
+  width:auto;
+  height:auto;
+}
+
+
+.icon-inscape{
+  width:45%;
+}
+
+.icon-video{
+  width:50%;
+}
+
+.icon-merch{
+  width:55%;
+}
+
+.icon-linkedin{
+  width:55%;
+}
+
+.icon-call{
+  width:25%;
+}
+
+.icon-resume{
+  width:50%;
+}
+
+.icon-email{
+  width:50%;
+}
+
+
+}
+
 </style>
 </head>
 <body>
